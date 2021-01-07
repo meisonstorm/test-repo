@@ -6,25 +6,28 @@
     <meta charset="viewport" content="width=device-width, initial-scale-1.8">
     <meta http-equiv="X-UA-Comptible" content="ie-edge">
     <title>JavaScript</title>
-    <link rel="stylesheet" href="/scripts/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
+    <div class="header">
+        <h1>MOJE PROJEKTY</h1>
+    </div>
 
-    <h1>MOJE PROJEKTY</h1>
-    <hr>
-
-    <div class="selectProject">
-        <button class="close close-project">Zamknij projekt</button>
-        <br>
-        <button class="projCalc projects">1. Kalkulator</button>
-        <h2 style="font-style: italic;"></h2>
+<div class="content">
+    <div class="projectsButtonsContainer">
+        <ul class="nav">
+            <li class="main">Ekran główny</li>
+            <li class="openCalculatorProject">Kalkulator</li>
+        </ul>
     </div>
 
     <div class="project">
-        <section class="secCalculator close">
+        <h2></h2>
+
+        <section class="sectionCalculatorProject close">
             <div class="calculator">
-                <div class="calculations">
+                <div class="calculatorHeader">
                     <div class="score">456+</div>
                     <div class="operation">555555</div>
                 </div>
@@ -49,9 +52,12 @@
             </div>
         </section>
     </div>
+</div>
+    
     
     
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/calculatorScript.js"></script>
 </body>
 
 </html>
