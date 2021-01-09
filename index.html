@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Comptible" content="ie-edge">
     <title>JavaScript</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/calculatorStyle.css">
+    <link rel="stylesheet" href="/styles/registrationFormStyle.css">
 </head>
 
 <body>
@@ -14,50 +16,74 @@
         <h1>MOJE PROJEKTY</h1>
     </div>
 
-<div class="content">
-    <div class="projectsButtonsContainer">
-        <ul class="nav">
-            <li class="main">Ekran główny</li>
-            <li class="openCalculatorProject">Kalkulator</li>
-        </ul>
-    </div>
+    <div class="content">
+        <div class="projectsMenuContainer">
+            <ul class="nav">
+                <li class="main">Ekran główny</li>
+                <li class="openCalculatorProject">Kalkulator</li>
+                <li class="openRegistrationFormProject">Formularz rejestracyjny</li>
+            </ul>
+        </div>
 
-    <div class="project">
-        <h2></h2>
+        <div class="project">
+            <h2></h2>
+            <p class="description"></p>
 
-        <section class="sectionCalculatorProject close">
-            <div class="calculator">
-                <div class="calculatorHeader">
-                    <div class="score">456+</div>
-                    <div class="operation">555555</div>
+            <section class="sectionCalculatorProject close">
+                <div class="calculator">
+                    <div class="calculatorHeader">
+                        <div class="score">456+</div>
+                        <div class="operation">555555</div>
+                    </div>
+                    <button class="btnClear">C</button>
+                    <button class="btnDelete">DEL</button>
+                    <button class="btnAction">/</button>
+                    <button class="btnAction">x</button>
+                    <button class="btnNumber">7</button>
+                    <button class="btnNumber">8</button>
+                    <button class="btnNumber">9</button>
+                    <button class="btnAction">-</button>
+                    <button class="btnNumber">4</button>
+                    <button class="btnNumber">5</button>
+                    <button class="btnNumber">6</button>
+                    <button class="btnAction">+</button>
+                    <button class="btnNumber">1</button>
+                    <button class="btnNumber">2</button>
+                    <button class="btnNumber">3</button>
+                    <button class="btnEqual row-two">=</button>
+                    <button class="btnNumber">,</button>
+                    <button class="btnNumber col-two">0</button>
                 </div>
-                <button class="btnClear">C</button>
-                <button class="btnDelete">DEL</button>
-                <button class="btnAction">/</button>
-                <button class="btnAction">x</button>
-                <button class="btnNumber">7</button>
-                <button class="btnNumber">8</button>
-                <button class="btnNumber">9</button>
-                <button class="btnAction">-</button>
-                <button class="btnNumber">4</button>
-                <button class="btnNumber">5</button>
-                <button class="btnNumber">6</button>
-                <button class="btnAction">+</button>
-                <button class="btnNumber">1</button>
-                <button class="btnNumber">2</button>
-                <button class="btnNumber">3</button>
-                <button class="btnEqual row-two">=</button>
-                <button class="btnNumber">,</button>
-                <button class="btnNumber col-two">0</button>
-            </div>
-        </section>
+            </section>
+
+            <section class="sectionRegistrationFormProject close">
+                <div class="registration-form">
+                    <h3>Rejestracja</h3>
+                    <p>Utwórz darmowe konto.</p>
+                    <form>
+                        <input type="email" class="mail" placeholder="E-mail"><br>
+                        <input type="password" class="password" placeholder="Hasło"><br>
+                        <input type="password" class="confirm-password" placeholder="Potwierdź hasło"><br>
+                        <input type="checkbox" class="confirm-policy" id="check">
+                        <label for="check">Potwierdzam zapoznanie się z <span>regulamninem</span></label><br>
+                        <input type="button" class="btn-submit" value="Zatwierdź">
+
+                        <p class="mail-validation"></p>
+                        <p class="password-validation"></p>
+                        <p class="confirm-password-validation"></p>
+                        <p class="submit-validation"></p>
+                    </form>
+
+                </div>
+            </section>
+        </div>
     </div>
-</div>
     
     
     
     <script src="/scripts/script.js"></script>
     <script src="/scripts/calculatorScript.js"></script>
+    <script src="/scripts/registrationFormScript.js"></script>
 </body>
 
 </html>

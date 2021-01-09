@@ -1,0 +1,38 @@
+.registration-form {
+    background-color: rgba(199, 199, 199, 0.7);
+    display: absolute;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 30rem;
+    margin-right: 10rem;
+    border: 1px solid rgb(66, 66, 66);
+}
+
+form{
+    padding-bottom: 40px;
+}
+
+input{
+    width: 400px;
+    padding: 10px 0;
+    margin: 10px;
+    border: black;
+}
+
+form p {
+    margin: 0;
+}
+
+.confirm-policy {
+    width: auto;
+}
+
+.correct{
+    color: rgb(122, 255, 110);
+    text-align: left;
+}
+
+.error{
+    text-align: left;
+    color: rgb(255, 163, 147);
+}
