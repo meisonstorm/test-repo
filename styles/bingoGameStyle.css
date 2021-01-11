@@ -1,7 +1,14 @@
 .sectionBingoGameProject {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 15px;
+}
+
+.sectionBingoGameProject button {
+    width: 270px;
+    padding: 15px;
+
 }
 
 .actualNumber {
@@ -25,4 +32,14 @@
     margin-top: 15px;
     font-size: 14px;
     color: rgb(175, 175, 175);
+}
+
+.playAgain {
+    background-color: rgb(167, 250, 42);
+    color: black;
+}
+
+.playAgain:hover{
+    background-color: rgb(185, 255, 80);
+    color: black;
 }

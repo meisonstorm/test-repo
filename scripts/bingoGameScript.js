@@ -46,7 +46,7 @@ const getDrawnNumbers = () => {
     startGame.classList.remove('close')
 }
 
-const numbersHistoryArr = [];
+let numbersHistoryArr = [];
 
 const setActualNum = () => {
     if (numbersHistoryArr.length < 80) {
@@ -69,7 +69,7 @@ const setActualNum = () => {
     }
 };
 
-const matchedNumbersArr = [];
+let matchedNumbersArr = [];
 
 function endGame() {
     if (matchedNumbersArr.length === 5) {
@@ -81,36 +81,41 @@ function endGame() {
 }
 
 const selectDrawnNumber1 = () => {
-    if (drawnNumber1.innerHTML == actualNumber.innerHTML) {
+    if (drawnNumber1.innerHTML == actualNumber.innerHTML && drawnNumber1.innerHTML != '') {
         drawnNumber1.style.color = 'green';
+        drawnNumber1.disabled = true;
         matchedNumbersArr.push(actualNumber.innerHTML);
         endGame();
     }
 }
 const selectDrawnNumber2 = () => {
-    if (drawnNumber2.innerHTML == actualNumber.innerHTML) {
+    if (drawnNumber2.innerHTML == actualNumber.innerHTML && drawnNumber2.innerHTML != '') {
         drawnNumber2.style.color = 'green';
+        drawnNumber2.disabled = true;
         matchedNumbersArr.push(actualNumber.innerHTML);
         endGame();
     }
 }
 const selectDrawnNumber3 = () => {
-    if (drawnNumber3.innerHTML == actualNumber.innerHTML) {
+    if (drawnNumber3.innerHTML == actualNumber.innerHTML && drawnNumber3.innerHTML != '') {
         drawnNumber3.style.color = 'green';
+        drawnNumber3.disabled = true;
         matchedNumbersArr.push(actualNumber.innerHTML);
         endGame();
     }
 }
 const selectDrawnNumber4 = () => {
-    if (drawnNumber4.innerHTML == actualNumber.innerHTML) {
+    if (drawnNumber4.innerHTML == actualNumber.innerHTML && drawnNumber4.innerHTML != '') {
         drawnNumber4.style.color = 'green';
+        drawnNumber4.disabled = true;
         matchedNumbersArr.push(actualNumber.innerHTML);
         endGame();
     }
 }
 const selectDrawnNumber5 = () => {
-    if (drawnNumber5.innerHTML == actualNumber.innerHTML) {
+    if (drawnNumber5.innerHTML == actualNumber.innerHTML && drawnNumber5.innerHTML != '') {
         drawnNumber5.style.color = 'green';
+        drawnNumber5.disabled = true;
         matchedNumbersArr.push(actualNumber.innerHTML);
         endGame();
     }
@@ -122,11 +127,24 @@ const resetGame = () => {
     drawnNumber3.innerHTML = '';
     drawnNumber4.innerHTML = '';
     drawnNumber5.innerHTML = '';
+    drawnNumber1.style.color = 'white';
+    drawnNumber2.style.color = 'white';
+    drawnNumber3.style.color = 'white';
+    drawnNumber4.style.color = 'white';
+    drawnNumber5.style.color = 'white';
+    drawnNumber1.disabled = false;
+    drawnNumber2.disabled = false;
+    drawnNumber3.disabled = false;
+    drawnNumber4.disabled = false;
+    drawnNumber5.disabled = false;
     actualNumber.innerHTML = '';
     numbersHistory.innerHTML = '';
-    startGame.classList.remove('close');
-    drawYourNumbers.classList.add('close')
-
+    drawYourNumbers.classList.remove('close')
+    startGame.classList.add('close');
+    playAgain.classList.add('close');
+    numbersHistoryArr = [];
+    matchedNumbersArr = [];
+    
 }
 
 drawYourNumbers.addEventListener('click', getDrawnNumbers);
