@@ -5,7 +5,8 @@ openCalculatorProject.addEventListener('click', () => {
     openCalculatorProject.classList.add('activeMenuElement');
     openRegistrationFormProject.classList.remove('activeMenuElement');
     sectionRegistrationFormProject.classList.add('close');
-
+    openBingoGameProject.classList.remove('activeMenuElement');
+    sectionBingoGameProject.classList.add('close');
 });
 
 const score = document.querySelector('.score');

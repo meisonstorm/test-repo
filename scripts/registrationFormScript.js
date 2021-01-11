@@ -11,6 +11,8 @@ openRegistrationFormProject.addEventListener('click', () => {
     openRegistrationFormProject.classList.add('activeMenuElement')
     openCalculatorProject.classList.remove('activeMenuElement')
     sectionCalculatorProject.classList.add('close');
+    openBingoGameProject.classList.remove('activeMenuElement');
+    sectionBingoGameProject.classList.add('close');
 });
 
 const mail = document.querySelector('.mail');

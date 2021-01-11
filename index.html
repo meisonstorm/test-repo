@@ -6,9 +6,10 @@
     <meta charset="viewport" content="width=device-width, initial-scale-1.8">
     <meta http-equiv="X-UA-Comptible" content="ie-edge">
     <title>JavaScript</title>
-    <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/calculatorStyle.css">
     <link rel="stylesheet" href="/styles/registrationFormStyle.css">
+    <link rel="stylesheet" href="/styles/bingoGameStyle.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
@@ -22,6 +23,7 @@
                 <li class="main">Ekran główny</li>
                 <li class="openCalculatorProject">Kalkulator</li>
                 <li class="openRegistrationFormProject">Formularz rejestracyjny</li>
+                <li class="openBingoGameProject">Gra: BINGO</li>
             </ul>
         </div>
 
@@ -76,6 +78,26 @@
 
                 </div>
             </section>
+
+            <section class="sectionBingoGameProject close">
+
+                <button class="playAgain close">Ja chcę jeszcze raz!</button>
+                
+                <div class="actualNumber"></div>
+
+                <button class="drawYourNumbers">Rozpocznij grę</button>
+                <button class="startGame close">Losuj kulkę</button>
+
+                <div class="yourNumbers">
+                    <button class="drawnNumber1"></button>
+                    <button class="drawnNumber2"></button>
+                    <button class="drawnNumber3"></button>
+                    <button class="drawnNumber4"></button>
+                    <button class="drawnNumber5"></button>
+                </div>
+                
+                <div class="numbersHistory"></div>
+            </section>
         </div>
     </div>
     
@@ -84,6 +106,7 @@
     <script src="/scripts/script.js"></script>
     <script src="/scripts/calculatorScript.js"></script>
     <script src="/scripts/registrationFormScript.js"></script>
+    <script src="/scripts/bingoGameScript.js"></script>
 </body>
 
 </html>
